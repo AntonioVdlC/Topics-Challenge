@@ -1,0 +1,118 @@
+/*------------------------------
+ * HEADER
+ *------------------------------*/
+#header{
+	background-color: black;
+	width: 100%;
+	height: 50px;
+	
+	margin-top: -15px;
+}
+#header p{
+	color: white;
+	padding-top: 5px;
+	padding-left: 20px;
+}
+
+.title{
+	font-size: 2em;
+}
+.signature{
+	font-size: 0.75em;
+	float: right;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+
+ /*------------------------------
+ * CONTENT
+ *------------------------------*/
+
+/* -- Columns Display -- */
+/*-----------------------*/
+
+#left-column, #right-column{
+	margin-top: 25px;
+}
+
+#left-column{
+	width: 70%;
+}
+#right-column{
+	width: 25%;
+	float: right;
+}
+
+
+/* -- Word Cloud -- */
+/*------------------*/
+
+#word-cloud{
+	position: relative;
+	padding-top: 10px;
+	margin-left: 10px;
+
+	width: 100%;
+	height: 300px;
+}
+
+/* -- Topic Class -- */
+.topic{
+	cursor: pointer;
+}
+.topic:hover{
+	/*font-weight: bold;
+	font-style: italic;*/
+}
+
+/* -- Sentiment Color -- */
+.positive{
+	color: green;
+}
+.neutral{
+	color: grey;
+}
+.negative{
+	color: red;
+}
+
+/* -- Selected Topic -- */
+.selected{
+	/*font-style: italic;*/
+	text-decoration: underline;
+	/*font-weight: bold;*/
+}
+
+/* -- Sizes (6) -- */
+.size0{
+	font-size: 1em;
+}
+.size1{
+	font-size: 1.5em;
+}
+.size2{
+	font-size: 2em;
+}
+.size3{
+	font-size: 2.5em;
+}
+.size4{
+	font-size: 3em;
+}
+.size5{
+	font-size: 3.5em;
+}
+
+
+/* -- Detail Information --*/
+/*-------------------------*/
+
+/* -- Topic Info -- */
+#topic-info{
+	visibility: hidden;
+}
+
+/* -- Topic Name --*/
+#topic-name{
+	font-weight: bold;
+}

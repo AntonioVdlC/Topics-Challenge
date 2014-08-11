@@ -1,0 +1,24 @@
+<!-- Right Column -->
+<div id='right-column'>
+	<!-- Text informing of the posibility of selecting a topic to display more information about it -->
+	<p id='info-text'>Select a topic to display more information.</p>
+	
+	<!-- Topic metadata information -->
+	<div id='topic-info'>
+		<p>Information on topic "<span id='topic-name'></span>":</p>
+		<p>Total mentions: <span id='total-mentions'></span></p>
+		<p>Positive mentions: <span id='positive-mentions' class='positive'></span></p>
+		<p>Neutral mentions: <span id='neutral-mentions' class='neutral'></span></p>
+		<p>Negative mentions: <span id='negative-mentions' class='negative'></span></p>
+	</div>
+</div>
+
+<!-- Left Column -->
+<div id='left-column'>
+	<!-- Word Cloud -->
+	<div id='word-cloud'>
+		<% _.each(topics, function(topic, i){%>
+			<span id='<%= i%>' class='topic <%= topic.size%> <%= topic.sentiment%>'><%= topic.label %></span>
+		<%});%>
+	</div>
+</div>
